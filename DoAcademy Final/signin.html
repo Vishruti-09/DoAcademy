@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="signin.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet">
+    <!--<title>Responsive Regisration Form </title>--> 
+</head>
+<body>
+        <div class="wrapper">
+        <nav>
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><img src="DoAcademy_logo-removebg-preview.png" alt="DoAcademy" width="250"></a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Service</a>
+              <ul>
+                <li><a href="index_courses.html">Courses</a></li>
+                <li><a href="bookbuy.html">Books</a></li>
+                <li><a href="sellbook.html">Seller Area</a></li>
+              </ul>
+            </li>
+            <li><a href="product.html">Redeem</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="faq1.html">FAQ</a></li>
+          </ul>
+          </div>
+          <form class="example" >
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+            <!-- <li><a href="#"><span class="fas fa-cart-plus"></span></a></li> -->
+            <div class="menu">
+              <li><a href="#"><span class="fas fa-cart-plus"></span></a></li>
+            <li><a href="login.html"><span class="far fa-user"></span></a>
+            </li>
+            <div class="line"></div>
+         </div>
+        </nav>
+        </div>
+        <div class="container">
+        <a href="#" class="logo"><img src="logo_doacademy.jpeg" height="auto" width="5%"></a>
+        <header>DoAcademy Registration</header>
+
+        <form action="signin.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="full_name" autocomplete="off" class="form-control" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="birth_date" autocomplete="off" class="form-control" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="mobile" autocomplete="off" class="form-control" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="email" autocomplete="off" class="form-control" placeholder="Enter your email" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="text" name="password" autocomplete="off" class="form-control" placeholder="Enter your Password" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" class="form-control" required>
+                                <option disabled selected>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Join For</label>
+                            <select name="user" class="form-control" required>
+                                <option disabled selected>Select</option>
+                                <option>Student</option>
+                                <option>Teacher</option>
+                                <option>Parent</option>
+                                <option>Individual</option>
+                            </select>
+                        </div>
+                    </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input type="text" name="id_type" autocomplete="off" class="form-control" placeholder="Enter ID type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" name="id_number" autocomplete="off" class="form-control" placeholder="Enter ID number" required>
+                        </div>
+
+                    </div>
+
+                    
+                </div> 
+    
+
+            
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <select name="address" class="form-control" required>
+                                <option disabled selected>Select</option>
+                                <option>Permanent</option>
+                                <option>Temporary</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" name="nationality" autocomplete="off" class="form-control" placeholder="Enter nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>House Number</label>
+                            <input type="number" name="flat_no" autocomplete="off" class="form-control" placeholder="Enter Flat number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>House Name</label>
+                            <input type="text" name="building" autocomplete="off" class="form-control" placeholder="Enter Your Building Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label> District</label>
+                            <input type="text" name="district" autocomplete="off" class="form-control" placeholder="Enter your District" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" name="city" autocomplete="off" class="form-control" placeholder="Enter your City" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" name="state" autocomplete="off" class="form-control" placeholder="Enter your State" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" name="father_name" autocomplete="off" class="form-control" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" name="mother_name" autocomplete="off" class="form-control" placeholder="Enter mother name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Spouse Name</label>
+                            <input type="text" name="spouse_name" autocomplete="off" class="form-control" placeholder="Enter spouse name" required>
+                        </div>
+
+                    
+                    </div>
+                        
+                        <a href ="#">
+                        <input type="submit"  class="button" value="Submit" > </a>
+                    </div>
+                </div> 
+            </div>
+             <script type="text/javascript" src="signin.js"></script>
+        </form>
+        </div>
+    </body>
+</html>

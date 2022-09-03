@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  body {
+    font-family: Open Sans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+    background-size: cover;
+  }
+  
+  .mainbox {
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .mainbox:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(arrow-bottom.png) no-repeat;
+    background-size: 5%;
+    left: 5%;
+    top: 48%;
+    transform: rotate(90deg);
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #949090;
+    overflow: hidden;
+    transition: all ease-in-out 5s;
+    transform: rotate(90deg);
+  }
+  
+  span {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+  }
+  
+  .span1 {
+    clip-path: polygon(0 17%, 0 50%, 50% 50%);
+    background-color: green;
+  }
+  
+  .span2 {
+    clip-path: polygon(0 17%, 30% 0, 50% 50%);
+    background-color: red;
+  }
+  
+  .span3 {
+    clip-path: polygon(30% 0, 71% 0, 50% 50%);
+    background-color: blue;
+  }
+  
+  .span4 {
+    clip-path: polygon(71% 0, 100% 18%, 50% 50%);
+    background-color: salmon;
+  }
+  
+  .span5 {
+    clip-path: polygon(100% 18%, 100% 50%, 50% 50%);
+    background: #ff8300;
+  }
+  
+  .box2 .span3 {
+    background-color: #00ff04;
+  }
+  
+  .box2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+  }
+  
+  .font {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .box1 .span1 b {
+    position: absolute;
+    top: 39%;
+    right: 60%;
+    transform: rotate(200deg);
+    text-align: center;
+  }
+  
+  .box1 .span2 b {
+    position: absolute;
+    top: 25%;
+    right: 57%;
+    transform: rotate(-130deg);
+  }
+  
+  .box1 .span3 b {
+    position: absolute;
+    top: 20%;
+    right: 36%;
+    transform: rotate(-90deg);
+  }
+  
+  .box1 .span4 b {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    transform: rotate(-45deg);
+  }
+  
+  .box1 .span5 b {
+    position: absolute;
+    top: 38%;
+    right: 10%;
+    transform: rotate(-15deg);
+    text-align: center;
+  }
+  
+  .box2 .span1 b {
+    position: absolute;
+    top: 34%;
+    right: 70%;
+    transform: rotate(200deg);
+  }
+  
+  .box2 .span2 b {
+    position: absolute;
+    top: 20%;
+    right: 60%;
+    transform: rotate(-130deg);
+    text-align: center;
+  }
+  
+  .box2 .span3 b {
+    position: absolute;
+    top: 15%;
+    right: 40%;
+    transform: rotate(270deg);
+  }
+  
+  .box2 .span4 b {
+    position: absolute;
+    top: 27%;
+    right: 20%;
+    transform: rotate(310deg);
+  }
+  
+  .box2 .span5 b {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    transform: rotate(-20deg);
+    text-align: center;
+  }
+  
+  .spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #ff5722;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .spin:active {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+  
+  .mainbox.animate:after {
+    animation: animateArrow 0.7s ease infinite;
+  }
+  
+  @keyframes animateArrow {
+    50% {
+      right: -50px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mainbox {
+      width: 100%;
+      height: 50%;
+    }
+  }
+
+  /* Navigation bar */
+  .wrapper{
+      background: #fad48b;
+      position: fixed;
+      width: 100%;
+      margin-top: -670px;
+    }
+    
+    .wrapper nav{
+      position: relative;
+      display: flex;
+      max-width: calc(100% - 200px);
+      background: #fad48b;
+      margin: 0 auto;
+      height: 80px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    nav .content{
+      display: flex;
+    }
+    
+    nav .content .links{
+      margin-left: 30px;
+      display: flex;
+      margin-top: 20px;
+      align-items: right;
+      margin-right: 30px;
+    }
+    
+    .content .logo a{
+      color: black;
+      font-size: 30px;
+      font-weight: 600;
+      align-items: left;
+    }
+    
+    .content .links li{
+      list-style: none;
+      margin-top: 10px;
+    }
+    
+    .content .links li a{
+      color: black;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 9px 17px;
+      border-radius: 5px;
+      background: #fad48b;
+      transition: all 0.3s ease;
+    }
+    
+    .content .links li a:hover{
+      background:#F69268 ;
+    
+    }
+    
+    .wrapper .menu-icon{
+      color: black;
+      font-size: 18px;
+      cursor:pointer;
+      line-height: 70px;
+      width: 70px;
+      text-align: center;
+    }
+    
+    .wrapper .menu-icon{
+      display: none;
+    }
+    
+    .search-box input{
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 17px;
+      color: black;
+      background: #fad48b;
+    }
+    
+    .wrapper .menu{
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+    }
+    
+    .wrapper .menu li{
+      list-style: none;
+      flex: 1;
+      font-size: 22px;
+      cursor: pointer;
+      user-select: none;
+      justify-content: space-between;
+      margin-right: 60px;
+      margin-bottom: 24px;
+    }
+    .wrapper .menu li:hover a{
+      color: #F69268;
+    }
+    .wrapper .menu li:first-child a{
+      color: #000000;
+    }
+    .wrapper .menu li:first-child:hover a{
+      color: #F69268;
+      }
+    .wrapper .menu li:nth-child(2) a{
+      color: #000000;
+    }
+    .wrapper .menu li:nth-child(2):hover a{
+      color: #000000;
+    }
+    
+    .wrapper .menu .line{
+      position: absolute;
+      height: 3px;
+      width: 15%;
+      background: #F69268;
+      left: 0;
+      bottom: 0;
+      transition: all 0.3s ease;
+    }
+    .wrapper .menu li:nth-child(1):hover ~ .line{
+      left: 5%;
+    }
+    .wrapper .menu li:nth-child(2):hover ~ .line{
+      left: 53%;
+    }
+    
+    /* Dropdown*/
+    
+    .content .links ul{
+      position: absolute;
+      background: #fad48b;
+      top: 70px;
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      color: #000000;
+    }
+    .content .links li:hover > ul{
+      top: 70px;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+    }
+    .content .links ul li a{
+      display:block;
+      width: 100%;
+      line-height: 20px;
+      border-radius: 0px!important;
+    }
+    .content .links ul ul{
+      position:absolute;
+      top:0;
+      right: calc(-100% + 8px);
+    }
+    .content .links ul li{
+      position: relative;
+    }
+     .menu ul {
+      position: absolute;
+      background: #fad48b;
+      top: 70px;
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      padding: 4px;
+    }
+    .menu li:hover > ul{
+      top: 50px;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+    }
+    .menu ul ul{
+      position:absolute;
+      top:0;
+      right: calc(-100% + 8px);
+    }
+    .menu ul li a{
+      display:block;
+      width: 100%;
+      line-height: 20px;
+      border-radius: 0px!important;
+      padding: 4px;
+    }
+     .wrapper .menu ul li{
+      position: relative;
+      color: #000000;
+    }
+    
+    /* Screen fixing */
+    @media screen and (max-width: 1250px) {
+      .wrapper nav{
+        max-width: 100%;
+        padding: 0 20px;
+      }
+      nav .content .links{
+        margin-left: 30px;
+      }
+      .content .links li a{
+        padding: 8px 19px;
+      }
+      .wrapper .search-box{
+        max-width: calc(100% - 100px);
+      }
+      .wrapper .search-box input{
+        padding: 0 100px 0 15px;
+      }
+    }
+    
+    @media screen and (max-width:900px){
+      .wrapper .menu-icon{
+        display: block;
+      }
+      .wrapper #show-menu:checked ~ .menu-icon i::before{
+        content: "\f00d";
+      }
+      nav .content .links{
+        display: block;
+        position: fixed;
+        background:#fad48b ;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        margin-left: 0;
+        max-width: 350px;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+      }
+      nav #show-menu:checked ~ .content .links{
+        left: 0%;
+      }
+      .content .links li{
+        margin: 15px 20px;
+      }
+      .content .links li a{
+        line-height: 40px;
+        font-weight: 20px;
+        display: block;
+        padding: 8px 18px;
+    
+      }
+    /* Dropdown Responsive */
+    .content .links ul{
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      background: none;
+    }
+    .content .links ul li{
+      margin: 7px 20px;
+    }
+    .content .links ul li a{
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 5px!important;
+    }
+    
+    
+    }
+    
+    /* Style the search field */
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 60%;
+      background: #f1f1f1;
+    }
+    
+    /* Style the submit button */
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #F69268;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none; 
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    
+    form.example button:hover {
+      background: #F69268;
+      transition: all 0.3s ease;
+    }
+    
+    /* Clear floats */
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }  

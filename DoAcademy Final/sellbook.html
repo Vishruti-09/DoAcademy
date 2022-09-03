@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="sellbook.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet">
+    <!--<title>Responsive Selling Form </title>--> 
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><img src="DoAcademy_logo-removebg-preview.png" alt="DoAcademy" width="250"></a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Service</a>
+              <ul>
+                <li><a href="index_courses.html">Courses</a></li>
+                <li><a href="bookbuy.html">Books</a></li>
+                <li><a href="sellbook.html">Seller Area</a></li> 
+              </ul>
+            </li>
+            <li><a href="product.html">Redeem</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="faq1.html">FAQ</a></li>
+          </ul>
+          </div>
+          <form class="example" >
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+            <!-- <li><a href="#"><span class="fas fa-cart-plus"></span></a></li> -->
+            <div class="menu">
+              <li><a href="#"><span class="fas fa-cart-plus"></span></a></li>
+            <li><a href="login.html"><span class="far fa-user"></span></a>
+            </li>
+            <div class="line"></div>
+         </div>
+        </nav>
+       </div>
+    <div class="container">
+        <a href="#" class="logo"><img src="logo_doacademy.jpeg" height="auto" width="5%"></a>
+        <header>DoAcademy Sell</header>
+
+        <form action="sellbook.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="name" autocomplete="off" class="form-control" placeholder="Enter your name" required>
+                        </div>
+
+                        <!-- <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div> -->
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="mobile" autocomplete="off" class="form-control" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="email" autocomplete="off" class="form-control" placeholder="Enter your email" required>
+                        </div>
+
+
+                        
+
+
+                    </div>
+
+            
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <select name="addresstype" autocomplete="off" class="form-control" required>
+                                <option disabled selected>Select</option>
+                                <option>Permanent</option>
+                                <option>Temporary</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" name="address" autocomplete="off" class="form-control" placeholder="Enter your Address" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" name="city" autocomplete="off" class="form-control" placeholder="Enter your City" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" name="state" autocomplete="off" class="form-control" placeholder="Enter your State" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details Book">
+                    <span class="title">Book Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Book Name</label>
+                            <input type="text" name="book_name" autocomplete="off" class="form-control" placeholder="Book Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Author Name</label>
+                            <input type="text" name="author_name" autocomplete="off" class="form-control" placeholder="Author Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Book Description</label>
+                            <input type="text" name="book_desc" autocomplete="off" class="form-control" placeholder="Book Description" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Book price</label>
+                            <input type="number" name="book_price" autocomplete="off" class="form-control" placeholder="Enter Book price" required>
+                        </div>
+
+                        
+                        <div class="container">
+                            <div class="card">
+                              <h3>Upload Files</h3>
+                              <div class="drop_box">
+                                <header>
+                                  <h4>Select File here</h4>
+                                </header>
+                                <p>Files Supported: PDF, TEXT, DOC , DOCX</p>
+                                <input type="file" name="pdf" autocomplete="off" class="form-control" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                                <button class="btn">Choose File</button>
+                              </div>
+                          
+                            </div>
+                        </div>
+
+                        <button class="sumbit">
+                            <span class="submit" placeholder="Submit">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                            </button>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="sellbook.js"></script>
+</body>
+</html>
